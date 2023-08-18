@@ -1,0 +1,196 @@
+/* Typography */
+h1, h2, h3, h4, h5, h6, .heading, body, .toggled form, .dynamic form, .secondary, .dropdown, .splash .news .meta {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
+/* Navbar */
+#header {
+  background: #900;
+}
+
+#header .primary {
+  background: #900;
+  box-shadow: none;
+  margin: 0.3em 0;
+}
+
+#header h1.heading {
+  margin-left: 2.5em;
+  margin-top: 0.5em;
+}
+
+#header h1.heading a {
+  color: #fff;
+  font-weight: 700;
+}
+
+#header h1.heading a sup {
+  color: #fffc;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+#header h1.heading a img.logo {
+  filter: contrast(0%) brightness(200%);
+  margin-right: 0.4em;
+}
+
+/* Buttons */
+.actions a, .actions a:link, .action, .action:link, .actions input, input[type="submit"], button, .current, .actions label {
+  background: #e6e6e6;
+  border: none;
+  border-radius: 12px;
+  transition: 0.2s;
+  padding: 0.6em 1.5em;
+  font-size: 0.95em;
+  font-weight: 700;
+}
+
+.actions span.current {
+  background: #d0d0d0;
+  box-shadow: none;
+  color: black;
+}
+
+.actions a:hover, .actions input:hover, .actions a:focus, .actions input:focus, label.action:hover, .action:hover, .action:focus {
+  box-shadow: none;
+  border: none;
+  color: inherit;
+  background: #dfdfdf;
+}
+
+/* Splash > Intro Module */
+.intro.module h2.heading {
+  /* Center to make it more inline with the content below */
+  text-align: center !important;
+  width: 100%;
+  display: block;
+}
+.splash .module div.account {
+  background-color: #f6f6f6;
+  border: none;
+  border-radius: 12px;
+  margin-top: 1em;
+}
+
+/* Headings */
+.splash .module h3 {
+  padding: 0.25em 0;
+}
+
+/* Foooter */
+#footer {
+  background: #900;
+  border: none;
+}
+
+#footer .navigation.actions .module.group h4.heading {
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+#footer .navigation.actions .module.group ul.menu li, #footer .navigation.actions .module.group ul.menu li a {
+  text-decoration: none;
+  border: none;
+  color: #fffa;
+}
+
+#footer .navigation.actions .module.group ul.menu li a:hover {
+  text-decoration: none;
+  border: none;
+  color: #fff;
+}
+
+.media.index{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 3.25em;
+  padding-right: 2em;
+}
+
+@media (min-width: 600px) { 
+  .media.index {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1600px) { 
+  .media.index {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 2000px) { 
+  .media.index {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* All Fandoms Index */
+.media.index .listbox, .media .listbox {
+  float: none;
+  width: 100%;
+  background-color: #f6f6f6;
+  border: none;
+  border-radius: 12px;
+  padding: 0.8em 1em 0 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 0;
+}
+
+.alphabet .listbox li p.actions, .media .listbox p.actions {
+  align-self: end;
+}
+
+.alphabet .listbox li ol.index.group, .media .listbox ol.index.group {
+  background: none;
+  box-shadow: none;
+  padding: 0.1em 0.3em;
+  height: 100%;
+}
+
+.alphabet .listbox li ol.index.group li, .media .listbox ol.index.group li {
+  margin: 0;
+}
+
+/* Specific Category Fandom Index */
+.listbox, fieldset fieldset.listbox {
+  float: none;
+  width: 100%;
+  background-color: #f6f6f6;
+  border: none;
+  border-radius: 12px;
+  padding: 0.8em 1em 0 1em;
+}
+
+ol.alphabet.fandom.index.group li ul.tags.index {
+  background: none;
+  box-shadow: none;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 600px) { 
+  ol.alphabet.fandom.index.group li ul.tags.index {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1600px) { 
+  ol.alphabet.fandom.index.group li ul.tags.index {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 2000px) { 
+  ol.alphabet.fandom.index.group li ul.tags.index {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+ol.alphabet.fandom.index.group li ul.tags.index li {
+  width: 100%;
+}
